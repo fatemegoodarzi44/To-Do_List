@@ -1,0 +1,111 @@
+.parent {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(-25deg, rgb(45, 68, 74), rgb(45, 68, 74));
+}
+.parent li {
+  list-style-type: none;
+}
+.parent input {
+  outline: none;
+  border: none;
+}
+.parent .red-box {
+  background: rgb(194, 227, 70);
+  background: linear-gradient(90deg, rgb(194, 227, 70) 0%, rgb(29, 253, 130) 50%, rgb(69, 177, 252) 100%);
+  min-height: 500px;
+  border-radius: 4px;
+}
+.parent .red-box .red-box-top {
+  height: 70px;
+  border-bottom: 1px solid white;
+}
+.parent .red-box .red-box-top div:nth-of-type(1) {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+@media screen and (max-width: 400px) {
+  .parent .red-box .red-box-top div:nth-of-type(1) {
+    font-size: 25px;
+  }
+}
+.parent .red-box .red-box-top div:nth-of-type(2) {
+  height: 30px;
+}
+.parent .red-box .red-box-bottom {
+  min-height: 400px;
+}
+.parent .red-box .red-box-bottom .black-box {
+  background: linear-gradient(-25deg, rgb(45, 68, 74), rgb(45, 68, 74));
+  border-radius: 4px;
+  min-height: 300px;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-1 {
+  border-bottom: 1px solid white;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-1 #_inp {
+  background-color: inherit;
+  border: none;
+  color: white;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-1 #add {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-1 #add i {
+  color: white;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list {
+  overflow: hidden;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task {
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 300px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task .bi-check-circle-fill {
+  color: white;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 80%;
+  left: 0;
+  top: 20px;
+  background-color: red;
+  z-index: 99;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task:hover .icon-bar {
+  right: 5px;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task .icon-bar {
+  position: absolute;
+  top: 5px;
+  right: -100px;
+  transition: 0.3s;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task .icon-bar i {
+  color: white;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task .icon-bar .bi-trash3-fill:hover {
+  color: red;
+}
+.parent .red-box .red-box-bottom .black-box .black-box-2 #list .task .input-edit {
+  background: linear-gradient(-25deg, rgb(45, 68, 74), rgb(45, 68, 74));
+  color: rgb(238, 243, 255);
+  font-family: "Source Sans Pro", sans-serif;
+}/*# sourceMappingURL=style.css.map */
